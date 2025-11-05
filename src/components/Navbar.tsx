@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/Swastik-Symbol.png";
-
+import logo1 from "../assets/vinayagar.png";
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const productName = "your Labels";
@@ -11,14 +11,22 @@ const Navbar: React.FC = () => {
     <header className="fixed top-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-sm z-50 shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-amber-300 to-amber-400 rounded-full shadow-sm">
-            <img src={logo} alt="logo" className="w-10 h-10" />
-          </div>
-          <h1 className="text-2xl font-extrabold text-gray-800 tracking-tight">
-            Swastik Sticker
-          </h1>
-        </div>
+      <div className="flex items-center gap-4">
+  <div className="flex items-center justify-center gap-3">
+    <div className="w-14 h-14 flex items-center justify-center bg-gradient-to-br from-amber-300 to-amber-400 rounded-full shadow-md">
+      <img src={logo} alt="Swastik logo" className="w-11 h-11" />
+    </div>
+    
+    <img
+      src={logo1}
+      alt="Vinayagar"
+      className="w-12 h-12 object-contain drop-shadow-md"
+    />
+  </div>
+  <h1 className="text-3xl font-extrabold text-gray-800 tracking-tight">
+    Swastik Sticker
+  </h1>
+</div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8 font-medium text-gray-700">
